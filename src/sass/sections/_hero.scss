@@ -1,0 +1,121 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 0;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+}
+
+.join-team-form {
+  background: rgba($primary-color, 0.95);
+  padding: 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+
+  .join-team-title {
+    color: $white-color;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .form-control {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid rgba($white-color, 0.3);
+    background: rgba($white-color, 0.9);
+  }
+
+  .join-submit-btn {
+    width: 100%;
+    background: $accent-red;
+    color: $white-color;
+    border: none;
+    padding: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+      background: darken($accent-red, 10%);
+    }
+  }
+}
+
+.donate-now-form {
+  background: rgba($primary-color, 0.95);
+  padding: 2.5rem;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+
+  .donate-now-title {
+    color: $white-color;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .donate-amounts-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+.donate-amount-btn {
+  background: $accent-red;
+  color: $white-color;
+  border: 2px solid $accent-red;
+  padding: 0.875rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+  &:hover {
+    background: darken($accent-red, 10%);
+    border-color: darken($accent-red, 10%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+    color: $white-color;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,451 @@
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #272341;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  border: none;
+  border-radius: 4px;
+  padding: .875rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #0000004d;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1a5490;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #123b65;
+}
+
+.navbar {
+  z-index: 1000;
+  border-bottom: none;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px #0000001a;
+  background: #4a90e2 !important;
+}
+
+.navbar .navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.navbar .nav-link {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  font-weight: 500;
+  color: #fff !important;
+}
+
+.navbar .nav-link:hover {
+  color: #fffc !important;
+}
+
+.navbar .nav-link.btn {
+  margin-left: .5rem;
+  color: #fff !important;
+  background: #d32f2f !important;
+  border: none !important;
+}
+
+.navbar .nav-link.btn:hover {
+  color: #fff !important;
+  background: #ab2424 !important;
+}
+
+.navbar .dropdown-menu {
+  background: #fff;
+  border: 1px solid #00000026;
+  border-radius: 4px;
+  min-width: 250px;
+  margin-top: .5rem;
+  padding: .5rem 0;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: #333;
+  padding: .5rem 1.5rem;
+  font-size: .9rem;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  color: #1a5490;
+  background-color: #1a54901a;
+}
+
+.navbar .navbar-toggler {
+  border-color: #ffffff4d;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+footer {
+  color: #fff;
+  background-color: #333;
+  margin-top: 4rem;
+  padding: 3rem 0;
+}
+
+footer .footer-content {
+  text-align: center;
+}
+
+footer .footer-content p {
+  margin-bottom: .5rem;
+  font-size: 1.4rem;
+}
+
+footer .footer-content .social-links {
+  margin-top: 1.5rem;
+}
+
+footer .footer-content .social-links a {
+  color: #fff;
+  margin: 0 1rem;
+  font-size: 2rem;
+  transition: color .3s;
+}
+
+footer .footer-content .social-links a:hover {
+  color: #00cdac;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+section .section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.about-section .about-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section .about-content img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2rem;
+}
+
+.contact-section .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section .contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-section .contact-form .form-group label {
+  margin-bottom: .5rem;
+  font-weight: 600;
+  display: block;
+}
+
+.contact-section .contact-form .form-group .form-control {
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
+  width: 100%;
+  padding: .75rem;
+  font-size: 1.4rem;
+}
+
+.contact-section .contact-form .form-group textarea.form-control {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.hero-section {
+  width: 100%;
+  margin-top: 60px;
+  position: relative;
+}
+
+.hero-image-container {
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-overlay {
+  background: linear-gradient(to top, #0006 0%, #0000 100%);
+  align-items: flex-end;
+  padding: 3rem 0;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.join-team-form {
+  backdrop-filter: blur(10px);
+  background: #1a5490f2;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px #0000004d;
+}
+
+.join-team-form .join-team-title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.join-team-form .form-control {
+  background: #ffffffe6;
+  border: 1px solid #ffffff4d;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding: .75rem;
+}
+
+.join-team-form .join-submit-btn {
+  color: #fff;
+  text-transform: uppercase;
+  background: #d32f2f;
+  border: none;
+  width: 100%;
+  padding: .875rem;
+  font-weight: 700;
+}
+
+.join-team-form .join-submit-btn:hover {
+  background: #ab2424;
+}
+
+.donate-now-form {
+  backdrop-filter: blur(10px);
+  background: #1a5490f2;
+  border-radius: 8px;
+  width: 100%;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px #0000004d;
+}
+
+.donate-now-form .donate-now-title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.donate-now-form .donate-amounts-row {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.donate-amount-btn {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  cursor: pointer;
+  text-align: center;
+  background: #d32f2f;
+  border: 2px solid #d32f2f;
+  border-radius: 4px;
+  min-width: 100px;
+  padding: .875rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+  box-shadow: 0 2px 8px #0003;
+}
+
+.donate-amount-btn:hover {
+  color: #fff;
+  background: #ab2424;
+  border-color: #ab2424;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #0000004d;
+}
+
+.projects-section .projects-grid, .priorities-section .priorities-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  display: grid;
+}
+
+.priorities-section .priorities-grid .priority-card {
+  background: #fff;
+  border: 1px solid #d2d2d2;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all .3s;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.priorities-section .priorities-grid .priority-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px #0003;
+}
+
+.priorities-section .priorities-grid .priority-card h3 {
+  color: #1a5490;
+  margin-bottom: 1rem;
+}
+
+.priorities-section .priorities-grid .priority-card p {
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.priorities-section .priorities-grid .priority-card a {
+  color: #1a5490;
+  margin-top: 1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.priorities-section .priorities-grid .priority-card a:hover {
+  color: #123b65;
+}
+
+.priority-detail-page .priority-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.priority-detail-page .priority-content h1 {
+  color: #1a5490;
+  margin-bottom: 2rem;
+}
+
+.priority-detail-page .priority-content h2 {
+  color: #272341;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.priority-detail-page .priority-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.priority-detail-page .priority-content ul {
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  list-style: outside;
+}
+
+.priority-detail-page .priority-content ul li {
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}

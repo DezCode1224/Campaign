@@ -1,0 +1,29 @@
+.contact-section {
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid $light-grey;
+        border-radius: 4px;
+        font-size: 1.4rem;
+      }
+
+      textarea.form-control {
+        min-height: 150px;
+        resize: vertical;
+      }
+    }
+  }
+}
