@@ -1,0 +1,11 @@
+// Mixins for common patterns
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $easing: ease) {
+  transition: $property $duration $easing;
+}
