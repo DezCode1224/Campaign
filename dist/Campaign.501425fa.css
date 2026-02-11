@@ -45,7 +45,7 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #272341;
+  color: #0a2e45;
   margin-bottom: 1rem;
   font-weight: 700;
   line-height: 1.2;
@@ -86,12 +86,12 @@ p {
 
 .btn-primary {
   color: #fff;
-  background-color: #1a5490;
+  background-color: #2d668f;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #123b65;
+  background-color: #214a68;
 }
 
 .navbar {
@@ -99,7 +99,7 @@ p {
   border-bottom: none;
   padding: 1rem 0;
   box-shadow: 0 2px 8px #0000001a;
-  background: #4a90e2 !important;
+  background: #2d668f !important;
 }
 
 .navbar .navbar-brand {
@@ -152,8 +152,8 @@ p {
 }
 
 .navbar .dropdown-menu .dropdown-item:hover {
-  color: #1a5490;
-  background-color: #1a54901a;
+  color: #2d668f;
+  background-color: #2d668f1a;
 }
 
 .navbar .navbar-toggler {
@@ -192,7 +192,7 @@ footer .footer-content .social-links a {
 }
 
 footer .footer-content .social-links a:hover {
-  color: #00cdac;
+  color: #00a859;
 }
 
 section {
@@ -273,6 +273,40 @@ section .section-title {
   height: 100%;
 }
 
+.hero-banner-container {
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.hero-banner {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-actions-section {
+  background: linear-gradient(#2d668f0d 0%, #fff 100%);
+  padding: 3rem 0;
+}
+
+.hero-actions-section .join-team-form, .hero-actions-section .donate-now-form {
+  margin: 0 auto;
+}
+
+.hero-actions-overlay {
+  background: linear-gradient(to top, #0000004d 0%, #0000 100%);
+  padding: 2rem 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .hero-overlay {
   background: linear-gradient(to top, #0006 0%, #0000 100%);
   align-items: flex-end;
@@ -286,7 +320,7 @@ section .section-title {
 
 .join-team-form {
   backdrop-filter: blur(10px);
-  background: #1a5490f2;
+  background: #2d668ff2;
   border-radius: 8px;
   width: 100%;
   max-width: 500px;
@@ -325,7 +359,7 @@ section .section-title {
 
 .donate-now-form {
   backdrop-filter: blur(10px);
-  background: #1a5490f2;
+  background: #2d668ff2;
   border-radius: 8px;
   width: 100%;
   padding: 2.5rem;
@@ -396,7 +430,7 @@ section .section-title {
 }
 
 .priorities-section .priorities-grid .priority-card h3 {
-  color: #1a5490;
+  color: #2d668f;
   margin-bottom: 1rem;
 }
 
@@ -406,14 +440,14 @@ section .section-title {
 }
 
 .priorities-section .priorities-grid .priority-card a {
-  color: #1a5490;
+  color: #2d668f;
   margin-top: 1rem;
   font-weight: 600;
   display: inline-block;
 }
 
 .priorities-section .priorities-grid .priority-card a:hover {
-  color: #123b65;
+  color: #214a68;
 }
 
 .priority-detail-page .priority-content {
@@ -422,12 +456,12 @@ section .section-title {
 }
 
 .priority-detail-page .priority-content h1 {
-  color: #1a5490;
+  color: #2d668f;
   margin-bottom: 2rem;
 }
 
 .priority-detail-page .priority-content h2 {
-  color: #272341;
+  color: #0a2e45;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }

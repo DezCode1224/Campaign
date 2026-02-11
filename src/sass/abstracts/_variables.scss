@@ -1,16 +1,23 @@
-// COLORS
-$primary-color: #1a5490; // Deep blue for primary actions
-$secondary-color: #00cdac;
+// COLORS - Campaign Color Palette
+$highlight-pale-glow: #F0FAFF;
+$shadow-dark-navy: #0A2E45;
+$background-steel-blue: #2D668F;
+$bottom-gradient-petrol-blue: #005478;
+$top-gradient-emerald-green: #00A859;
+
+// Primary colors
+$primary-color: $background-steel-blue; // Steel Blue
+$secondary-color: $top-gradient-emerald-green; // Emerald Green
 $accent-red: #d32f2f; // Red for donate button
-$header-blue: #4a90e2; // Light blue for header background
-$dark-blue: #1a5490; // Dark blue for text/buttons
+$header-blue: $background-steel-blue; // Steel Blue for header background
+$dark-blue: $shadow-dark-navy; // Dark Navy for text/buttons
 
 $white-color: #fff;
 
 $dark-grey: #333333;
 $light-grey: #d2d2d2;
 
-$dark-blue-text: #272341; // For Headings
+$dark-blue-text: $shadow-dark-navy; // Dark Navy for Headings
 
 // FONT SIZE
 $default-font-size: 1.6rem;

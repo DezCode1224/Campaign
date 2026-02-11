@@ -9,6 +9,9 @@
     ],
     "*.html": [
       "@parcel/transformer-html"
+    ],
+    "*.{jpg,jpeg,JPG,JPEG,png,PNG,gif,GIF,webp,WEBP,svg,SVG}": [
+      "@parcel/transformer-raw"
     ]
   },
   "bundler": "@parcel/bundler-default",
