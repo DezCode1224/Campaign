@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel serve src/index.html --port 1907 --no-autoinstall --no-hmr --no-source-maps --no-cache",
     "dev": "npm run build && npx http-server dist -p 1907 -o",
-    "build": "parcel build src/index.html src/about.html src/espanol.html src/priorities.html src/priorities/healthcare.html src/priorities/education.html src/priorities/climate-energy.html src/priorities/economy-jobs-infrastructure.html src/priorities/gun-violence.html src/priorities/housing.html src/priorities/immigration-reform.html src/priorities/lgbtq-rights.html src/priorities/national-security-veterans.html src/priorities/criminal-justice-reform.html src/priorities/seniors.html src/priorities/campaign-finance-reform.html src/endorsements.html src/get-involved.html src/news.html src/donate.html --public-url ./ --no-cache",
+"build": "parcel build src/index.html src/about.html src/espanol.html src/priorities.html src/priorities/healthcare.html src/priorities/education.html src/priorities/climate-energy.html src/priorities/economy-jobs-infrastructure.html src/priorities/gun-violence.html src/priorities/housing.html src/priorities/immigration-reform.html src/priorities/lgbtq-rights.html src/priorities/national-security-veterans.html src/priorities/criminal-justice-reform.html src/priorities/seniors.html src/priorities/campaign-finance-reform.html src/endorsements.html src/get-involved.html src/news.html src/donate.html --public-url / --no-cache",
     "serve": "npm run build && npx http-server dist -p 1907 -o"
   },
   "devDependencies": {
