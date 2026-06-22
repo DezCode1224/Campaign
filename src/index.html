@@ -73,15 +73,13 @@
 <body>
   <div id="intro">
 
-    <button id="enterButton"> Dezmond Rosier For District 1"</button>
+    <video id="introVideo" autoplay playsinline>
+        <source src="VIDEO.DEZ.mp4" type="video/mp4">
+    </video>
 
-    <video id="introVideo" style="display:none;">
-      <source src="VIDEO.DEZ.mp4" type="video/mp4">
-  </video>
-  
-  <button id="skipButton" style="display:none;">
-      Skip Intro
-  </button>
+    <button id="skipButton">
+        Skip Intro
+    </button>
 
 </div>
 
@@ -273,20 +271,7 @@
 
 <script>
   const video = document.getElementById("introVideo");
-  const button = document.getElementById("enterButton");
   const skipButton = document.getElementById("skipButton");
-  
-  button.onclick = function () {
-  
-      button.style.display = "none";
-  
-      video.style.display = "block";
-  
-      skipButton.style.display = "block";
-  
-      video.play();
-  
-  };
   
   video.onended = showWebsite;
   
