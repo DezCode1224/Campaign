@@ -60,9 +60,13 @@
 </head>
 <body>
   <div id="intro">
-    <video id="introVideo" autoplay muted playsinline>
+
+    <button id="enterButton">ENTER WEBSITE</button>
+
+    <video id="introVideo" style="display:none;">
         <source src="VIDEO.DEZ.mp4" type="video/mp4">
     </video>
+
 </div>
 
 <div id="websiteContent" style="display:none;">
@@ -252,12 +256,26 @@
 </div>
 
 <script>
-const video = document.getElementById("introVideo");
-
-video.onended = function () {
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("websiteContent").style.display = "block";
-};
-</script>
+  const video = document.getElementById("introVideo");
+  const button = document.getElementById("enterButton");
+  
+  button.onclick = function () {
+  
+      button.style.display = "none";
+  
+      video.style.display = "block";
+  
+      video.play();
+  
+  };
+  
+  video.onended = function () {
+  
+      document.getElementById("intro").style.display = "none";
+  
+      document.getElementById("websiteContent").style.display = "block";
+  
+  };
+  </script>
 </body>
 </html>
