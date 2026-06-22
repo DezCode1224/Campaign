@@ -83,7 +83,7 @@
 
 </div>
 
-<div id="websiteContent" style="display:none;">
+<video id="introVideo" autoplay playsinline>
   <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -271,20 +271,19 @@
 
 <script>
   const video = document.getElementById("introVideo");
-  const skipButton = document.getElementById("skipButton");
-  
-  video.onended = showWebsite;
-  
-  skipButton.onclick = showWebsite;
-  
-  function showWebsite() {
-  
-      video.pause();
-  
-      document.getElementById("intro").style.display = "none";
-  
-      document.getElementById("websiteContent").style.display = "block";
-  
+const skipButton = document.getElementById("skipButton");
+
+video.play();
+
+video.onended = showWebsite;
+
+skipButton.onclick = showWebsite;
+
+function showWebsite() {
+    video.pause();
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("websiteContent").style.display = "block";
+}
   }
   </script>
 </body>
