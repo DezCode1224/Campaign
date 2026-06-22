@@ -37,6 +37,18 @@
     }
     </style>
     <style>
+      #skipButton{
+    position:absolute;
+    top:30px;
+    right:30px;
+    z-index:10001;
+    padding:12px 20px;
+    font-size:18px;
+    background:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
 #intro {
     position: fixed;
     top: 0;
@@ -61,7 +73,7 @@
 <body>
   <div id="intro">
 
-    <button id="enterButton"> Dezmond Rosier For District 1 Commssioner"</button>
+    <button id="enterButton"> Dezmond Rosier For District 1"</button>
 
     <video id="introVideo" style="display:none;">
       <source src="VIDEO.DEZ.mp4" type="video/mp4">
@@ -262,6 +274,7 @@
 <script>
   const video = document.getElementById("introVideo");
   const button = document.getElementById("enterButton");
+  const skipButton = document.getElementById("skipButton");
   
   button.onclick = function () {
   
@@ -269,17 +282,25 @@
   
       video.style.display = "block";
   
+      skipButton.style.display = "block";
+  
       video.play();
   
   };
   
-  video.onended = function () {
+  video.onended = showWebsite;
+  
+  skipButton.onclick = showWebsite;
+  
+  function showWebsite() {
+  
+      video.pause();
   
       document.getElementById("intro").style.display = "none";
   
       document.getElementById("websiteContent").style.display = "block";
   
-  };
+  }
   </script>
 </body>
 </html>
