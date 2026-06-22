@@ -73,17 +73,19 @@
 <body>
   <div id="intro">
 
-    <video id="introVideo" autoplay playsinline>
-        <source src="VIDEO.DEZ.mp4" type="video/mp4">
-    </video>
+    <button id="enterButton"> Dezmond Rosier For District 1"</button>
 
-    <button id="skipButton">
-        Skip Intro
-    </button>
+    <video id="introVideo" style="display:none;">
+      <source src="VIDEO.DEZ.mp4" type="video/mp4">
+  </video>
+  
+  <button id="skipButton" style="display:none;">
+      Skip Intro
+  </button>
 
 </div>
 
-<video id="introVideo" autoplay playsinline>
+<div id="websiteContent" style="display:none;">
   <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -271,20 +273,34 @@
 
 <script>
   const video = document.getElementById("introVideo");
-const skipButton = document.getElementById("skipButton");
-
-video.play();
-
-video.onended = showWebsite;
-
-skipButton.onclick = showWebsite;
-
-function showWebsite() {
-    video.pause();
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("websiteContent").style.display = "block";
-}
+  const button = document.getElementById("enterButton");
+  const skipButton = document.getElementById("skipButton");
   
+  button.onclick = function () {
+  
+      button.style.display = "none";
+  
+      video.style.display = "block";
+  
+      skipButton.style.display = "block";
+  
+      video.play();
+  
+  };
+  
+  video.onended = showWebsite;
+  
+  skipButton.onclick = showWebsite;
+  
+  function showWebsite() {
+  
+      video.pause();
+  
+      document.getElementById("intro").style.display = "none";
+  
+      document.getElementById("websiteContent").style.display = "block";
+  
+  }
   </script>
 </body>
 </html>
